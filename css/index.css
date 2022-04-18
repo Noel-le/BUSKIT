@@ -197,6 +197,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: none;
+  margin-top: 80px;
   font-size: 13.5px;
   transform: translatY(-100%);
 }
