@@ -5,7 +5,7 @@ const get = (target) => {
   return document.querySelector(target);
 };
 
-const un = u
+const u = u
 const pageNo = 1
 const numOfRows = 10
 const type = 'json'
@@ -92,13 +92,7 @@ const createInfoElement = (idx, items) => {
 
     let routeId = routeid
     const API_URL2 = 
-    'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ u
-    +'&pageNo=' + pageNo
-    +'&numOfRows=' + 60
-    +'&_type=' + type
-    +'&cityCode='+ cityCode
-    +'&routeId='+ routeId
-
+    u+'&pageNo='+pageNo+'&numOfRows='+60+'&_type='+type+'&cityCode='+cityCode+'&routeId='+routeId
     fetchDataPopup(API_URL2, routeno)
   })
   return $busInfo;
@@ -137,13 +131,7 @@ const createInfoElement_oneItem = (items) => {
 
     let routeId = routeid
     const API_URL2 = 
-    'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ u
-    +'&pageNo=' + pageNo
-    +'&numOfRows=' + 60
-    +'&_type=' + type
-    +'&cityCode='+ cityCode
-    +'&routeId='+ routeId
-
+    u+'&pageNo='+pageNo+'&numOfRows='+60+'&_type='+type+'&cityCode='+cityCode+'&routeId='+routeId
     fetchDataPopup(API_URL2, routeno)
   })
   return $busInfo;
@@ -183,13 +171,7 @@ const renderAllinfo130 = (items, start, end) => {
     for (let i = 0; i < routeList.length; i++){
       const routeId = routeList[i] 
       const API_URL_now = 
-      'http://apis.data.go.kr/1613000/BusLcInfoInqireService/getRouteAcctoBusLcList?serviceKey='+ u 
-      +'&cityCode='+ cityCode
-      +'&routeId=' + routeId
-      +'&numOfRows=' + numOfRows
-      +'&pageNo=' + pageNo
-      +'&_type=' + type
-
+      u+'&cityCode='+cityCode+'&routeId='+routeId+'&numOfRows='+numOfRows+'&pageNo='+pageNo+'&_type='+type
       getDataNow(API_URL_now, start, end, routeId)
     }
 }
@@ -265,13 +247,7 @@ const createInfoElement_pos = (nodenm, routenm, routeid) =>{
   
       let routeId = routeid
       const API_URL2 = 
-      'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ service
-      +'&pageNo=' + pageNo
-      +'&numOfRows=' + 60
-      +'&_type=' + type
-      +'&cityCode='+ cityCode
-      +'&routeId='+ routeId
-  
+      u+'&pageNo='+pageNo+'&numOfRows='+60+'&_type='+type+'&cityCode='+cityCode+'&routeId='+routeId
       fetchDataPopup(API_URL2, busNum)
     })
     return $busInfo;
@@ -398,13 +374,7 @@ const init = (start, end, nodeid) => {
     for (let i = 0; i < nodeid.length; i++){
       const nodeId = nodeid[i] 
       const API_URL = 
-      'http://apis.data.go.kr/1613000/ArvlInfoInqireService/getSttnAcctoArvlPrearngeInfoList?serviceKey='+ serviceKey 
-      +'&cityCode='+ cityCode
-      +'&nodeId=' + nodeId
-      +'&numOfRows=' + numOfRows
-      +'&pageNo=' + pageNo
-      +'&_type=' + type
-      
+      u+'&cityCode='+cityCode+'&nodeId='+nodeId+'&numOfRows='+numOfRows+'&pageNo='+pageNo+'&_type='+type
       if(nodeId ==='GMB92'){   //오성예식장 > 공대
         fetchData92(API_URL, start, end);
       }else if (nodeId ==='GMB91'){   //구미종합버스터미널 앞 > 공대
