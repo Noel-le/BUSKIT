@@ -247,7 +247,7 @@ const createInfoElement_pos = (nodenm, routenm, routeid) =>{
   
       let routeId = routeid
       const API_URL2 = 
-      'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='ul+'&pageNo='+pageNo+'&numOfRows='+60+'&_type='+type+'&cityCode='+cityCode+'&routeId='+routeId
+      'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ul+'&pageNo='+pageNo+'&numOfRows='+60+'&_type='+type+'&cityCode='+cityCode+'&routeId='+routeId
       fetchDataPopup(API_URL2, busNum)
     })
     return $busInfo;
