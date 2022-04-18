@@ -33,12 +33,14 @@ header {
 }
    
   body {
+    position: relative;
+    min-height: 100%-110px;
     background-color: #e0f1ff;
     margin: 0;
   }
   
   .contentsWrap {
-    margin: 90px auto;
+    margin: 110px auto 90 auto;
     max-width: 340px;
     border: none;
     padding: 20px;
@@ -183,21 +185,21 @@ header {
   
   /*  footer style  */
 
-  
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(53, 48, 48);
-    margin-top: 130px;
-    color: aliceblue; 
-    padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: none;
-    font-size: 13.5px;
-  }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(53, 48, 48);
+  margin-top: 30px;
+  color: aliceblue;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: none;
+  font-size: 13.5px;
+}
+
   
   footer ul{
     padding-left: 25px;
