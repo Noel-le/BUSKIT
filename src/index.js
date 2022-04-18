@@ -1,5 +1,5 @@
 import '../lib/xmlToJSON.js'
-import {$serviceKey} from '../apikey.js'
+import {API_KEY} from '../config.js'
 
 
 const get = (target) => {
