@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSKIT</title>
+  
+    <!-- 버스정보 title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href="../css/app.css">
+
+    <!-- bus info -->
+    <header>
+      <h4>BUSKIT</h4>
+      <button type="button" class="nodeBtn" id="img_btn">노선정보</button>
+    </header>
+  </head>
+  
+  <body>
+    <div class="contentsWrap">
+      <div class="infoWindow">    
+        <h2>start <img src="../img/right-arrow.png" alt="arrow"> end</h2>
+            
+        <div class="bus-info">
+        </div> 
+
+        <div class="horizonAndOrWrap">
+          <div class="caution-bar">
+            <hr class="leftHr">
+              <div class="or">caution</div>
+            <hr class="rightHr">  
+          </div>
+          <div class="caution">
+            <p>도로교통 상황에 따라 <br>오차가 발생할 수 있습니다</p> 
+          </div>
+        </div>
+        <div class="popup "></div>
+      </div>
+      <div class="dimmed-layer"></div>
+    </div>
+  </body>
+  
+  <script type="module"> 
+    import {init} from './index.js';
+    init('교외','공대', ['GMB130']);  //금오공대입구(종점)
+  </script>
+
+  <footer>
+    <div>
+      [ 구미버스 운행정보 및 피드백 ] <br><br>
+      <a href="http://bis.gumi.go.kr/main/main.do", id="Gumi_link"> 구미 버스정보시스템 바로가기</a> <a href="https://forms.gle/62TK9NoHTZ9dQNAc9", id = 'feedback'>feedback</a><br>
+      <br>© admin_kkomag
+    </div>
+  </footer>
+</html>
+  

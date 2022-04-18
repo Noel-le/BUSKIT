@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BUSKIT</title>
+    <link rel="stylesheet" type = "text/css" href="../css/index.css">   
+    <header>
+      <h4>BUSKIT</h4>
+    </header>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEW70K12LL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JEW70K12LL');
+  </script>
+  <!-- page route -->
+  <script>
+      function newPage(id){
+        if (id ==='go_st'){
+          // 공대 > 구미역
+          window.location.href = '../static/sc_st.html'
+        } else if(id ==='st_go'){
+          // 구미역 > 공대
+          window.location.href = '../static/st_sc.html'
+        } else if(id ==='go_out'){
+          //공대>옥계, 터미널 등...
+          window.location.href = './sc_out.html'
+        } else if (id ==='ok_go'){
+        // 옥계 > 공대
+          window.location.href = './ok_sc.html'
+        } else if (id ==='tm_go'){
+          //  터미털 > 공대
+          window.location.href = './tm_sc.html'
+        }
+      };
+  </script>
+  </head>
+  <body>
+    <div class="contentsWrap">
+      <div class="infoWindow">        
+        <h2>금오공대 버스정보</h2>
+        <div class="content-area">
+          <div class="dropdown">
+            <button class="dropbtn"> School ▷</button>
+            <div class="dropdown-content">
+              <input class = 'button' id='go_st' type="button" onclick="newPage(this.id)" value='공대 > 구미역' />
+              <input class = 'button' id='go_out' type="button" onclick="newPage(this.id)" value='공대 > 교외' />
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn"> School ◁ </button>
+            <div class="dropdown-content">
+              <input class = 'button' id='st_go' type="button" onclick="newPage(this.id)" value='구미역 > 공대' />
+              <input class = 'button' id='ok_go' type="button" onclick="newPage(this.id)" value='교외 > 공대' />
+              <input class = 'button' id='tm_go' type="button" onclick="newPage(this.id)" value='터미널 > 공대' />        
+            </div>
+          </div>
+        </div>
+          <div class="horizonAndOrWrap">
+              <hr class="leftHr">
+              <div class="or">caution</div>
+              <hr class="rightHr">
+          </div>
+          <div class="caution">
+              <p>도로교통 상황에 따라 <br>10분이상 지연될 수 있습니다</p> 
+          </div>
+        </div>
+    </div>
+  </body>
+  <footer>
+    <ul>   
+      [ 구미버스 운행정보 및 피드백 ] <br><br>
+      <a href="http://bis.gumi.go.kr/main/main.do", id="Gumi_link"> 구미 버스정보시스템 바로가기</a> <a href="https://forms.gle/62TK9NoHTZ9dQNAc9", id = 'feedback'>feedback</a><br>
+      <br> © admin_kkomag
+    </ul>
+  </footer>
+  </html>
+</html>
