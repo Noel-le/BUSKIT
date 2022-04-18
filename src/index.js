@@ -1,11 +1,11 @@
 import '../lib/xmlToJSON.js'
-import {service} from '../config.js'
+import {u} from '../u.js'
 
 const get = (target) => {
   return document.querySelector(target);
 };
 
-const serviceKey = service
+const un = u
 const pageNo = 1
 const numOfRows = 10
 const type = 'json'
@@ -92,7 +92,7 @@ const createInfoElement = (idx, items) => {
 
     let routeId = routeid
     const API_URL2 = 
-    'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ service
+    'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ u
     +'&pageNo=' + pageNo
     +'&numOfRows=' + 60
     +'&_type=' + type
@@ -137,7 +137,7 @@ const createInfoElement_oneItem = (items) => {
 
     let routeId = routeid
     const API_URL2 = 
-    'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ service
+    'http://apis.data.go.kr/1613000/BusRouteInfoInqireService/getRouteAcctoThrghSttnList?serviceKey='+ u
     +'&pageNo=' + pageNo
     +'&numOfRows=' + 60
     +'&_type=' + type
@@ -183,7 +183,7 @@ const renderAllinfo130 = (items, start, end) => {
     for (let i = 0; i < routeList.length; i++){
       const routeId = routeList[i] 
       const API_URL_now = 
-      'http://apis.data.go.kr/1613000/BusLcInfoInqireService/getRouteAcctoBusLcList?serviceKey='+ serviceKey 
+      'http://apis.data.go.kr/1613000/BusLcInfoInqireService/getRouteAcctoBusLcList?serviceKey='+ u 
       +'&cityCode='+ cityCode
       +'&routeId=' + routeId
       +'&numOfRows=' + numOfRows
