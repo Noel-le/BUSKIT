@@ -6,7 +6,7 @@ const get = (target) => {
   return document.querySelector(target);
 };
 
-const serviceKey = $serviceKey
+const serviceKey = API_KEY
 const pageNo = 1
 const numOfRows = 10
 const type = 'json'
