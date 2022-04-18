@@ -37,8 +37,6 @@ h2 img{
 
 /* body area */
 body {
-  position: relative;
-  min-height: 100%-110px;
   background-color: #e0f1ff;
   margin: 0;
 }
@@ -137,7 +135,7 @@ body {
 }
 
 .contentsWrap {
-  margin: 110px auto 90 auto;
+  margin: 90px auto;
   max-width: 340px;
   border: none;
   padding: 20px;
@@ -237,8 +235,8 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: rgb(53, 48, 48);
-  margin-top: 30px;
-  color: aliceblue;
+  margin-top: 130px;
+  color: aliceblue; 
   padding: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
