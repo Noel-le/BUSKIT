@@ -1,7 +1,11 @@
+html {
+  height: 100%;
+}
+
 /* head_area */
 header {
   text-align: center;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -14,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-  
+
 h2 {
   max-width: 65%;
   font-size: 18px;
@@ -26,7 +30,7 @@ h2 {
   font: bolder;
 }
 
-h2 img{
+h2 img {
   max-width: 20%;
   max-height: 90%;
   width: auto;
@@ -37,20 +41,21 @@ h2 img{
 
 /* body area */
 body {
+  height: 100%;
   background-color: #e0f1ff;
   margin: 0;
 }
 
-.bus-info{
+.bus-info {
   position: relative;
-  left:9.5%;
+  left: 9.5%;
   min-width: 270px;
-  align-content:center ;
+  align-content: center;
   align-items: center;
   margin-bottom: 25px;
-  float:left;
+  float: left;
   display: flex;
-  overflow-x:scroll;
+  overflow-x: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -59,10 +64,10 @@ body {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.bus-item{
-  position:relative;
+.bus-item {
+  position: relative;
   border-radius: 10px;
-  border-right:3px dashed rgb(255, 255, 255);
+  border-right: 3px dashed rgb(255, 255, 255);
   min-width: 240px;
   height: 160px;
   background-color: rgba(243, 242, 242, 0.76);
@@ -74,11 +79,11 @@ body {
   margin: 0 auto;
 }
 
-.bus-item:last-child{
+.bus-item:last-child {
   border-right: none;
 }
 
-.bus-item li{
+.bus-item li {
   width: 240px;
   list-style: none;
   margin: 0px;
@@ -86,36 +91,36 @@ body {
   margin-bottom: 10px;
 }
 
-.current_position{
+.current_position {
   position: relative;
   display: inline;
 }
 
-.current_position .current_pos{
-  margin-top : 23px;
+.current_position .current_pos {
+  margin-top: 23px;
   font-size: 14px;
   font-weight: 550;
 }
 
-.current_position li{
+.current_position li {
   max-width: 230px;
-  margin-top : 23px;
+  margin-top: 23px;
   font-size: 14px;
   font-weight: 550;
 }
 
-.noneDisplay{
+.noneDisplay {
   position: relative;
   top: 50px;
   font-size: 16px;
   font-weight: 600;
 }
 
-.bus{
+.bus {
   list-style: none;
 }
 
-.bus-number{
+.bus-number {
   background-color: rgb(99, 99, 226);
   border-radius: 10px;
   list-style: none;
@@ -123,20 +128,22 @@ body {
   font-weight: 800;
   margin-top: 15px;
   margin-bottom: 18px;
-  color:#ffffff;
+  color: #ffffff;
   max-width: 100px;
 }
 
-
-.destination{
+.destination {
   font-size: 14px;
   font-weight: 600;
-
 }
 
 .contentsWrap {
-  margin: 90px auto;
+  margin: 80px auto;
   max-width: 340px;
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+  position: relative;
   border: none;
   padding: 20px;
   text-align: center;
@@ -170,11 +177,11 @@ body {
   margin-bottom: 25px;
 }
 
-.businfo{
+.businfo {
   z-index: 9999;
 }
 
-.caution-bar{
+.caution-bar {
   width: 180px;
   display: flex;
   text-align: center;
@@ -184,8 +191,8 @@ body {
 
 .leftHr {
   height: 1px;
-  float:left;
-  width:50%;
+  float: left;
+  width: 50%;
   box-sizing: border-box;
 }
 
@@ -197,14 +204,14 @@ body {
 }
 
 .or {
-  float:left;
-  margin:2px 0px;
+  float: left;
+  margin: 2px 0px;
   font-size: 13px;
   box-sizing: border-box;
   color: #ff4079;
   font-size: 14px;
   font-weight: 800;
-  margin:2px 10%;
+  margin: 2px 10%;
 }
 
 .caution {
@@ -215,7 +222,7 @@ body {
   width: 200px;
 }
 
-.caution p{
+.caution p {
   padding-top: 0;
   align-items: center;
   text-align: center;
@@ -225,18 +232,19 @@ body {
 }
 
 .noneunderline {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* footer area */
 footer {
-  position: fixed;
+  position: relative;
+  transform: translateY(-100%);
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 117px;
   background-color: rgb(53, 48, 48);
-  margin-top: 130px;
-  color: aliceblue; 
+  color: aliceblue;
   padding: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -244,7 +252,7 @@ footer {
   font-size: 13.5px;
 }
 
-footer div{
+footer div {
   padding-left: 25px;
 }
 
@@ -257,23 +265,23 @@ footer div{
 }
 
 /* popup area */
-div{
+div {
   height: auto;
 }
 
-.display{
-  position: fixed; 
-  left: 0; 
-  top: 0; 
-  width: 100%; 
-  height: 100%; 
+.display {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(15, 15, 15, 0.192);
   z-index: 999;
 }
 
 .popup {
-  left:50%;
-  top:50%;
+  left: 50%;
+  top: 50%;
   margin-left: -160px;
   margin-top: 100px;
   width: 80%;
@@ -282,30 +290,30 @@ div{
   padding: 20px 10px;
   border-radius: 27px;
   overflow: hidden;
-  font-size: 13px;;
+  font-size: 13px;
   opacity: 0;
   visibility: hidden;
   transform: translate(0%, 100px);
-  transition: opacity .5s, visibility .5s, transform .5s;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   z-index: 9999;
 }
 
 .show {
-  left:50%;
-  top:50%;
+  left: 50%;
+  top: 50%;
   width: 300px;
   margin-left: -160px;
   opacity: 1;
   visibility: visible;
   transform: translate(0%, -70px);
-  transition: opacity .5s, visibility .5s, transform .5s;
+  transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
   height: 26%;
   display: flex;
-  overflow-x: scroll; 
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   z-index: 9999;
 }
 
@@ -313,7 +321,7 @@ div{
   display: none;
 }
 
-.content_area{
+.content_area {
   min-width: 260px;
   overflow-y: scroll;
   max-height: 200px;
@@ -324,16 +332,16 @@ div{
   border-right: 8px dashed rgb(230, 229, 224);
 }
 
-.content_area:last-child{
+.content_area:last-child {
   border-right: none;
 }
 
-.popup .content_area .contents{
+.popup .content_area .contents {
   margin-left: 55px;
   margin-right: 5px;
 }
 
-.popup .content_area .nodeid{
+.popup .content_area .nodeid {
   max-height: 180px;
   display: flex;
   overflow-y: scroll;
@@ -348,22 +356,22 @@ div{
   font-weight: 600;
 }
 
-.popup .content_area .BusNum{
+.popup .content_area .BusNum {
   margin: 5px;
   margin-right: 0px;
   background-color: rgb(99, 99, 226);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 800;
-  position:relative;
+  position: relative;
   height: 23px;
   width: 54px;
-  list-style:none;
+  list-style: none;
   color: #ffffff;
 }
 
 /* popup button area */
-button.nodeBtn{
+button.nodeBtn {
   border-radius: 7px;
   width: 80px;
   height: 24px;
@@ -373,6 +381,6 @@ button.nodeBtn{
   color: #ffffff;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(197, 246, 140);
 }
