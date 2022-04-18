@@ -158,6 +158,8 @@ header {
   }
   
   .dropdown-content input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     background-color: #ffffff;
     min-width : 110px;
     align-items: center;
