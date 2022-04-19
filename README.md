@@ -1,5 +1,5 @@
 # BUSKIT
-bus information service for kumoh national univ student
+bus information service for kumoh univ student
 
 ## provide scheduled information 
 gumi station and kumoh univ are termination, so it's more accurate provide scheduled time table
