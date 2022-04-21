@@ -73,7 +73,7 @@ const createInfoElement = (idx, items) => {
     <div class = 'bus-number'>${routeno}번</div>
     <li class = 'destination'>${nodenm}</li>
     <li>남은정류장 수 : ${arrprevstationcnt} 개</li>
-    <li>도착예정시간 : ${Math.ceil(arrtime/60)} 분</li> 
+    <li>도착예정시간 : ${Math.floor(arrtime/60)} 분</li> 
   `;
 
   const $dimmed_layer = get('.dimmed-layer')
@@ -112,7 +112,7 @@ const createInfoElement_oneItem = (items) => {
     <div class = 'bus-number'>${routeno}번</div>
     <li class = 'destination'>${nodenm}</li>
     <li>남은정류장 수 : ${arrprevstationcnt} 개</li>
-    <li>도착예정시간 : ${Math.ceil(arrtime/60)} 분</li> 
+    <li>도착예정시간 : ${Math.floor(arrtime/60)} 분</li> 
   `;
 
   const $dimmed_layer = get('.dimmed-layer')
