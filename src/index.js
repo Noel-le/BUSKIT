@@ -297,7 +297,7 @@ const fetchData92 = (url, start, end) => {
         item.push(items[i])
         renderAllinfo(item, start, end)
       } else {
-        renderAllinfo_none(start, end)
+//         renderAllinfo_none(start, end)
         console.log('Err! 도착정보없음')
       }
     }
@@ -326,7 +326,7 @@ const fetchData91 = (url, start, end) => {
         item.push(items[i])
         renderAllinfo(item, start, end)
       } else {
-        renderAllinfo_none(start, end)
+//         renderAllinfo_none(start, end)
         console.log('Err! 도착정보없음')
       }
     }
